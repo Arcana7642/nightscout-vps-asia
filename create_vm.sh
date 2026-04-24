@@ -35,9 +35,9 @@ read -p "Enter a name for your new VM [${default_vm_name}]: " vm_name < /dev/tty
 vm_name=${vm_name:-$default_vm_name}
 
 # --- Choose region and zone ---
-regions=("us-west1" "us-central1" "us-east1")
+region="asia-northeast3"
 region=${regions[$RANDOM % ${#regions[@]}]}
-zone=$(gcloud compute zones list --filter="region:($region)" --format="value(name)" | shuf -n 1)
+zone="asia-northeast3-a"
 
 echo
 echo "Selected region: $region"
