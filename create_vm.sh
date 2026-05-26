@@ -36,7 +36,6 @@ vm_name=${vm_name:-$default_vm_name}
 
 # --- Choose region and zone ---
 region="asia-northeast3"
-region=${regions[$RANDOM % ${#regions[@]}]}
 zone="asia-northeast3-a"
 
 echo
